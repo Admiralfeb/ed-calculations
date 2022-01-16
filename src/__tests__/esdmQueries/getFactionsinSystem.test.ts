@@ -1,7 +1,7 @@
-import { getFactionsinSystem } from 'src/edsmQueries';
+import { getFactionsinSystem } from 'edsmQueries';
 import { rest } from 'msw';
-import { errorHandlers } from 'src/__mocks__/server/handlers/errorHandlers';
-import { server } from 'src/__mocks__/server/server';
+import { errorHandlers } from '__mocks__/server/handlers/errorHandlers';
+import { server } from '__mocks__/server/server';
 
 describe('getFactionsinSystem', () => {
   it('should call using Arugbal if not given system', async () => {

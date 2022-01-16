@@ -1,6 +1,5 @@
 {
   "minify": true,
-  "exclude": ["__mocks__", "__tests__"],
   "jsc": {
     "parser": {
       "syntax": "typescript",

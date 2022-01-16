@@ -1,7 +1,7 @@
-import { getBodiesinSystem } from 'src/edsmQueries';
+import { getBodiesinSystem } from 'edsmQueries';
 import { rest } from 'msw';
-import { errorHandlers } from 'src/__mocks__/server/handlers/errorHandlers';
-import { server } from 'src/__mocks__/server/server';
+import { errorHandlers } from '__mocks__/server/handlers/errorHandlers';
+import { server } from '__mocks__/server/server';
 
 describe('getBodiesinSystem', () => {
   it('should call using Arugbal if not given system', async () => {

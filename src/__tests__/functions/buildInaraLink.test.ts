@@ -1,4 +1,4 @@
-import { buildInaraLink } from 'src/functions/buildInaraLink';
+import { buildInaraLink } from 'functions/buildInaraLink';
 
 describe('Build Inara Link', () => {
   it('should build a system', () => {

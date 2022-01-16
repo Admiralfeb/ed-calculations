@@ -1,7 +1,7 @@
-import { getSystemsinSphere } from 'src/edsmQueries';
+import { getSystemsinSphere } from 'edsmQueries';
 import { rest } from 'msw';
-import { errorHandlers } from 'src/__mocks__/server/handlers/errorHandlers';
-import { server } from 'src/__mocks__/server/server';
+import { errorHandlers } from '__mocks__/server/handlers/errorHandlers';
+import { server } from '__mocks__/server/server';
 
 describe('getSystemsinSphere', () => {
   it('should call using Arugbal and distance 50 if not given system', async () => {
