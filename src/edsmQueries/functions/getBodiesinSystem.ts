@@ -21,5 +21,3 @@ export const getBodiesinSystem = async (systemName = 'Arugbal') => {
     throw err;
   }
 };
-
-export default getBodiesinSystem;

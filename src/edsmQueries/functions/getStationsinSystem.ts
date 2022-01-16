@@ -7,7 +7,7 @@ const apiURL = 'https://www.edsm.net/api-system-v1/stations';
  * Gets stations within a system
  * @param systemName default Arugbal
  */
-const getStationsinSystem = async (systemName = 'Arugbal') => {
+export const getStationsinSystem = async (systemName = 'Arugbal') => {
   try {
     const response = await axios.get<ISystemStations>(apiURL, {
       params: {
@@ -21,5 +21,3 @@ const getStationsinSystem = async (systemName = 'Arugbal') => {
     throw err;
   }
 };
-
-export { getStationsinSystem };

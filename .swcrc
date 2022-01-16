@@ -1,0 +1,21 @@
+{
+  "minify": true,
+  "exclude": ["__mocks__", "__tests__"],
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true
+    },
+    "target": "es2017",
+    "keepClassNames": true,
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    }
+  },
+  "module": {
+    "type": "commonjs",
+    "noInterop": true
+  }
+}

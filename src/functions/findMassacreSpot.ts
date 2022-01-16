@@ -5,7 +5,7 @@ import {
   getSystemsinSphere,
   IPossibility,
   ISphereSystem,
-} from 'edsmQueries';
+} from '../edsmQueries';
 
 /**
  * Progress message that can be subscribed to for the `findMassacreSpot` function.

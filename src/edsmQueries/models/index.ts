@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 export * from './systemBodies';
 export * from './faction';
 export * from './possibility';

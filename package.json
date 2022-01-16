@@ -2,9 +2,8 @@
   "name": "@admiralfeb/ed-calculations",
   "version": "1.0.0",
   "description": "library with calculations helpful in Elite: Dangerous",
-  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "swc ./src -d dist && tsc src/**/*.ts --declaration --emitDeclarationOnly --outDir dist --downlevelIteration",
     "test": "jest",
     "prepublish": "npm run build"
   },
@@ -29,6 +28,9 @@
   },
   "homepage": "https://github.com/admiralfeb/ed-calculations#readme",
   "devDependencies": {
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.129",
+    "@swc/jest": "^0.2.17",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
@@ -36,8 +38,11 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.4.7",
+    "msw": "^0.36.4",
     "prettier": "^2.5.1",
+    "regenerator-runtime": "^0.13.9",
     "ts-jest": "^27.1.3",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   },
   "dependencies": {
